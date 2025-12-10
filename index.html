@@ -18,52 +18,168 @@
     </header>
 
     <!-- HERO -->
-    <section class="text-center px-6 py-14 lg:flex lg:items-center lg:justify-center lg:gap-16">
-      <img src="./src/wizard.png" class="w-32 mx-auto lg:w-64" />
-      
-      <div class="lg:text-left">
-        <h2 class="text-4xl lg:text-6xl font-extrabold text-yellow-400 mt-4">
-          A Tactical Card Dungeon Game
+    <section class="relative px-10 py-24 text-center lg:text-center">
+
+      <!-- Left Character -->
+      <img src="./src/wizard.png" class="hidden lg:block absolute left-20 top-1/2 -translate-y-1/2 w-52"/>
+
+      <!-- Main Text -->
+      <div class="max-w-2xl mx-auto">
+        <h2 class="text-5xl lg:text-7xl font-extrabold text-yellow-400">
+          Dungeon Walk
         </h2>
-        <p class="mt-3 opacity-80 lg:text-lg">
-          Fight skeletons, loot upgrades, survive the maze.
-        </p>
-        <button class="bg-yellow-400 text-black font-bold px-6 py-3 rounded mt-6 lg:text-xl">
+        <p class="mt-3 text-yellow-200 tracking-wide">Card-Based Rogue RPG</p>
+        <button class="bg-yellow-400 text-black font-bold px-6 py-3 rounded mt-5 hover:bg-yellow-300">
           Play Demo
         </button>
       </div>
+
+      <!-- Right Character -->
+      <img src="./src/Addskello.png" class="hidden lg:block absolute right-20 top-1/2 -translate-y-1/2 w-52"/>
+      
     </section>
 
+
+
     <!-- FEATURES -->
-    <section class="px-6 py-12 bg-[#151515] space-y-6">
-      <h3 class="text-2xl font-bold text-center text-yellow-400">Features</h3>
-      <div class="grid gap-3 text-center lg:grid-cols-2">
-        <div class="dw-card">🗡 Tactical card combat</div>
-        <div class="dw-card">🧙 Build a wizard party</div>
-        <div class="dw-card">💀 Skeleton & boss fights</div>
-        <div class="dw-card">📜 Procedural dungeon layouts</div>
+    <section class="bg-[#151515] py-16 px-6 lg:px-20">
+      <div class="max-w-6xl mx-auto lg:flex lg:items-center lg:justify-between lg:gap-12">
+
+        <!-- Left: Heading + list -->
+        <div class="lg:w-1/2">
+          <h3 class="text-3xl font-bold text-yellow-400 mb-6 tracking-wide">
+            Features
+          </h3>
+
+          <ul class="space-y-3 text-sm lg:text-base">
+            <li class="flex items-start gap-3">
+              <span class="mt-2 h-2 w-2 rounded-full bg-yellow-400"></span>
+              <span>Tactical card battles</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-2 h-2 w-2 rounded-full bg-yellow-400"></span>
+              <span>Build a wizard party</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-2 h-2 w-2 rounded-full bg-yellow-400"></span>
+              <span>Skeleton &amp; boss fights</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-2 h-2 w-2 rounded-full bg-yellow-400"></span>
+              <span>Procedural dungeon layouts</span>
+            </li>
+          </ul>
+
+          <button
+            class="mt-6 inline-block border border-yellow-400 px-5 py-2 text-xs tracking-wide uppercase rounded hover:bg-yellow-400 hover:text-black">
+            See Features
+          </button>
+        </div>
+
+        <!-- Right: Skeleton card -->
+        <div class="mt-10 lg:mt-0 lg:w-1/2">
+          <div class="bg-[#191919] border border-yellow-400 rounded-xl px-8 py-6 flex justify-center">
+            <img src="./src/skeleton.png" class="w-40 lg:w-56" alt="Skeleton enemy" />
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- HOW IT WORKS -->
-    <section class="px-6 py-16 space-y-14 lg:flex lg:justify-center lg:gap-16 lg:space-y-0">
-      <div class="dw-card text-center max-w-xs">
-        <img src="./src/wizard.png" class="w-20 mx-auto" />
-        <h4 class="text-xl text-yellow-300 font-bold mt-3">Choose Your Hero</h4>
-        <p class="opacity-80 text-sm mt-1">Select wizards with unique abilities.</p>
+    <section class="py-24 px-6 lg:px-24">
+
+      <h2 class="text-center text-white text-xl tracking-[4px] mb-20">
+        HOW IT <span class="text-yellow-400">WORKS</span>
+      </h2>
+
+   
+      <div class="grid gap-10 lg:grid-cols-2 lg:items-center mb-24">
+        <img src="./src/wizard.png" class="mx-auto w-32 sm:w-40 lg:w-52" />
+        <div class="text-center lg:text-left">
+          <h3 class="text-yellow-400 text-xl lg:text-2xl font-bold mb-3">Meet Your Guide</h3>
+          <p class="opacity-80 leading-relaxed max-w-md mx-auto lg:mx-0">
+            Begin your journey with a friendly NPC who teaches dungeon survival,
+            deck-building and exploration strategies.
+          </p>
+        </div>
       </div>
 
-      <div class="dw-card text-center max-w-xs">
-        <img src="./src/skeleton.png" class="w-20 mx-auto" />
-        <h4 class="text-xl text-yellow-300 font-bold mt-3">Battle Foes</h4>
-        <p class="opacity-80 text-sm mt-1">Face skeleton bosses using smart tactics.</p>
+  
+      <div class="grid gap-10 lg:grid-cols-2 lg:items-center mb-24">
+        <div class="text-center lg:text-left lg:order-1 order-2">
+          <h3 class="text-yellow-400 text-xl lg:text-2xl font-bold mb-3">Daily Quests</h3>
+          <p class="opacity-80 leading-relaxed max-w-md mx-auto lg:mx-0">
+            Complete daily tasks to earn loot and power-up.  
+            Turn real-world steps into in-game resources.
+          </p>
+        </div>
+        <img src="./src/dailyquests.png" class="mx-auto w-32 sm:w-40 lg:w-52 lg:order-2 order-1" />
       </div>
+
+
+      <div class="grid gap-10 lg:grid-cols-2 lg:items-center">
+        <img src="./src/skeleton.png" class="mx-auto w-32 sm:w-40 lg:w-52" />
+        <div class="text-center lg:text-left">
+          <h3 class="text-yellow-400 text-xl lg:text-2xl font-bold mb-3">Epic Battles</h3>
+          <p class="opacity-80 leading-relaxed max-w-md mx-auto lg:mx-0">
+            Fight high-level skeleton bosses in tactical turn-based combat.  
+            Use card combos and magical abilities to survive.
+          </p>
+        </div>
+      </div>
+
     </section>
 
+
+    
+
+
     <!-- FOOTER -->
-    <footer class="bg-[#111] text-center text-xs py-5 mt-10 opacity-80">
-      © 2025 Dungeon Walk — All Rights Reserved
+    <footer class="bg-[#0c0c0d] border-t border-yellow-400 mt-32 py-12 px-8">
+
+      <div class="max-w-6xl mx-auto grid gap-10 text-center lg:text-left
+                  lg:grid-cols-3 lg:items-start">
+
+        <!-- Column 1 — Logo & Name -->
+        <div>
+          <h3 class="text-yellow-400 font-bold text-xl tracking-wide mb-2">
+            Dungeon Walk
+          </h3>
+          <p class="text-xs text-gray-400 leading-relaxed max-w-xs mx-auto lg:mx-0">
+            A tactical roguelike card adventure. Build your deck, fight skeletons,
+            and descend deeper with every run.
+          </p>
+        </div>
+
+        <!-- Column 2 — Navigation -->
+        <div class="space-y-2">
+          <h4 class="text-sm font-semibold text-yellow-400 tracking-wide">Navigation</h4>
+          <ul class="space-y-1 text-sm">
+            <li><a href="#" class="hover:text-yellow-400 transition">Home</a></li>
+            <li><a href="#" class="hover:text-yellow-400 transition">Features</a></li>
+            <li><a href="#" class="hover:text-yellow-400 transition">How it Works</a></li>
+            <li><a href="#" class="hover:text-yellow-400 transition">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 — Social / Icons -->
+        <div class="space-y-2">
+          <h4 class="text-sm font-semibold text-yellow-400 tracking-wide">Follow Us</h4>
+          <div class="flex justify-center lg:justify-start gap-4 mt-1">
+            <a href="#"><img src="./src/icon-twitter.png" class="w-5 opacity-70 hover:opacity-100 transition"></a>
+            <a href="#"><img src="./src/icon-github.png" class="w-5 opacity-70 hover:opacity-100 transition"></a>
+            <a href="#"><img src="./src/icon-discord.png" class="w-5 opacity-70 hover:opacity-100 transition"></a>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="text-[10px] text-gray-500 text-center mt-10 tracking-wide">
+        © 2025 Dungeon Walk — All Rights Reserved
+      </p>
+
     </footer>
+
 
   </body>
 </html>
