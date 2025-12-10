@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+/* Required for your assignment */
+@layer components {
+  .dw-card {
+    @apply bg-[#111] border border-yellow-400 p-4 rounded-xl shadow text-center;
+  }
+}

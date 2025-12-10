@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dungeon Walk</title>
+
+    <!-- Tailwind output -->
+    <link rel="stylesheet" href="./src/output.css">
+  </head>
+
+  <body class="bg-[#0d0d0f] text-white font-sans">
+
+    <!-- HEADER -->
+    <header class="flex justify-between items-center p-4 border-b border-yellow-400">
+      <h1 class="text-xl font-bold text-yellow-400">Dungeon Walk</h1>
+      <button class="border border-yellow-400 px-3 py-1 rounded text-sm">Menu</button>
+    </header>
+
+    <!-- HERO -->
+    <section class="text-center px-6 py-14 lg:flex lg:items-center lg:justify-center lg:gap-16">
+      <img src="./src/wizard.png" class="w-32 mx-auto lg:w-64" />
+      
+      <div class="lg:text-left">
+        <h2 class="text-4xl lg:text-6xl font-extrabold text-yellow-400 mt-4">
+          A Tactical Card Dungeon Game
+        </h2>
+        <p class="mt-3 opacity-80 lg:text-lg">
+          Fight skeletons, loot upgrades, survive the maze.
+        </p>
+        <button class="bg-yellow-400 text-black font-bold px-6 py-3 rounded mt-6 lg:text-xl">
+          Play Demo
+        </button>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="px-6 py-12 bg-[#151515] space-y-6">
+      <h3 class="text-2xl font-bold text-center text-yellow-400">Features</h3>
+      <div class="grid gap-3 text-center lg:grid-cols-2">
+        <div class="dw-card">🗡 Tactical card combat</div>
+        <div class="dw-card">🧙 Build a wizard party</div>
+        <div class="dw-card">💀 Skeleton & boss fights</div>
+        <div class="dw-card">📜 Procedural dungeon layouts</div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="px-6 py-16 space-y-14 lg:flex lg:justify-center lg:gap-16 lg:space-y-0">
+      <div class="dw-card text-center max-w-xs">
+        <img src="./src/wizard.png" class="w-20 mx-auto" />
+        <h4 class="text-xl text-yellow-300 font-bold mt-3">Choose Your Hero</h4>
+        <p class="opacity-80 text-sm mt-1">Select wizards with unique abilities.</p>
+      </div>
+
+      <div class="dw-card text-center max-w-xs">
+        <img src="./src/skeleton.png" class="w-20 mx-auto" />
+        <h4 class="text-xl text-yellow-300 font-bold mt-3">Battle Foes</h4>
+        <p class="opacity-80 text-sm mt-1">Face skeleton bosses using smart tactics.</p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#111] text-center text-xs py-5 mt-10 opacity-80">
+      © 2025 Dungeon Walk — All Rights Reserved
+    </footer>
+
+  </body>
+</html>
