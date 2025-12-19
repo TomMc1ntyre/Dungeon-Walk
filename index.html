@@ -9,20 +9,19 @@
     <link rel="stylesheet" href="./src/output.css">
   </head>
 
-  <body class="bg-[#0d0d0f] text-white font-sans">
+  <body class="bg-[#0d0d0f] text-white font-sans scroll-smooth">
 
     <!-- HEADER -->
-    <header class="flex justify-between items-center p-4 border-b border-yellow-400">
+    <header id="home" class="flex justify-between items-center p-4 border-b border-yellow-400">
       <h1 class="text-xl font-bold text-yellow-400">Dungeon Walk</h1>
       <button class="border border-yellow-400 px-3 py-1 rounded text-sm">Menu</button>
     </header>
 
     <!-- HERO -->
-    <section class="relative px-10 py-24 text-center lg:text-center">
+    <section class="relative px-10 py-24 text-center">
 
-      
-      <img src="./src/wizard.png" class="hidden lg:block absolute left-20 top-1/2 -translate-y-1/2 w-52"/>
-
+      <img src="./src/images/wizz.png"
+           class="hidden lg:block absolute left-20 top-1/2 -translate-y-1/2 w-52"/>
 
       <div class="max-w-2xl mx-auto">
         <h2 class="text-5xl lg:text-7xl font-extrabold text-yellow-400">
@@ -34,18 +33,14 @@
         </button>
       </div>
 
-    
-      <img src="./src/Addskello.png" class="hidden lg:block absolute right-20 top-1/2 -translate-y-1/2 w-52"/>
-      
+      <img src="./src/images/skel.png"
+           class="hidden lg:block absolute right-20 top-1/2 -translate-y-1/2 w-52"/>
     </section>
 
-
-
     <!-- FEATURES -->
-    <section class="bg-[#151515] py-16 px-6 lg:px-20">
-      <div class="max-w-6xl mx-auto lg:flex lg:items-center lg:justify-between lg:gap-12">
+    <section id="features" class="bg-[#151515] py-16 px-6 lg:px-20">
+      <div class="max-w-6xl mx-auto lg:flex lg:items-center lg:gap-12">
 
-        
         <div class="lg:w-1/2">
           <h3 class="text-3xl font-bold text-yellow-400 mb-6 tracking-wide">
             Features
@@ -54,221 +49,169 @@
           <ul class="space-y-3 text-sm lg:text-base">
             <li class="flex items-start gap-3">
               <span class="mt-2 h-2 w-2 rounded-full bg-yellow-400"></span>
-              <span>Tactical card battles</span>
+              Tactical card battles
             </li>
             <li class="flex items-start gap-3">
               <span class="mt-2 h-2 w-2 rounded-full bg-yellow-400"></span>
-              <span>Build a wizard party</span>
+              Build a wizard party
             </li>
             <li class="flex items-start gap-3">
               <span class="mt-2 h-2 w-2 rounded-full bg-yellow-400"></span>
-              <span>Skeleton &amp; boss fights</span>
+              Skeleton & boss fights
             </li>
             <li class="flex items-start gap-3">
               <span class="mt-2 h-2 w-2 rounded-full bg-yellow-400"></span>
-              <span>Procedural dungeon layouts</span>
+              Procedural dungeon layouts
             </li>
           </ul>
-
-          <button
-            class="mt-6 inline-block border border-yellow-400 px-5 py-2 text-xs tracking-wide uppercase rounded hover:bg-yellow-400 hover:text-black">
-            See Features
-          </button>
         </div>
 
-        
-        <div class="mt-10 lg:mt-0 lg:w-1/2">
-          <div class="bg-[#191919] border border-yellow-400 rounded-xl px-8 py-6 flex justify-center">
-            <img src="./src/skeleton.png" class="w-40 lg:w-56" alt="Skeleton enemy" />
+        <div class="mt-10 lg:mt-0 lg:w-1/2 flex justify-center">
+          <div class="bg-black border border-yellow-400 rounded-xl p-6">
+            <img src="./src/images/skel2.webp" class="w-40 lg:w-56" />
           </div>
         </div>
+
       </div>
     </section>
 
     <!-- HOW IT WORKS -->
-    <section class="py-24 px-6 lg:px-24">
+    <section id="how-it-works" class="py-24 px-6 lg:px-24">
 
       <h2 class="text-center text-white text-xl tracking-[4px] mb-20">
         HOW IT <span class="text-yellow-400">WORKS</span>
       </h2>
 
-   
       <div class="grid gap-10 lg:grid-cols-2 lg:items-center mb-24">
-        <img src="./src/wizard.png" class="mx-auto w-32 sm:w-40 lg:w-52" />
+        <img src="./src/images/guide.png" class="mx-auto w-40 lg:w-52" />
         <div class="text-center lg:text-left">
-          <h3 class="text-yellow-400 text-xl lg:text-2xl font-bold mb-3">Meet Your Guide</h3>
-          <p class="opacity-80 leading-relaxed max-w-md mx-auto lg:mx-0">
-            Begin your journey with a friendly NPC who teaches dungeon survival,
-            deck-building and exploration strategies.
+          <h3 class="text-yellow-400 text-2xl font-bold mb-3">Meet Your Guide</h3>
+          <p class="opacity-80 max-w-md mx-auto lg:mx-0">
+            Begin your journey with a friendly NPC who teaches dungeon survival
+            and deck-building strategies.
           </p>
         </div>
       </div>
 
-  
       <div class="grid gap-10 lg:grid-cols-2 lg:items-center mb-24">
-        <div class="text-center lg:text-left lg:order-1 order-2">
-          <h3 class="text-yellow-400 text-xl lg:text-2xl font-bold mb-3">Daily Quests</h3>
-          <p class="opacity-80 leading-relaxed max-w-md mx-auto lg:mx-0">
-            Complete daily tasks to earn loot and power-up.  
-            Turn real-world steps into in-game resources.
+        <div class="text-center lg:text-left order-2 lg:order-1">
+          <h3 class="text-yellow-400 text-2xl font-bold mb-3">Daily Quests</h3>
+          <p class="opacity-80 max-w-md mx-auto lg:mx-0">
+            Complete daily tasks to earn loot and turn real-world steps
+            into in-game resources.
           </p>
         </div>
-        <img src="./src/dailyquests.png" class="mx-auto w-32 sm:w-40 lg:w-52 lg:order-2 order-1" />
+        <img src="./src/images/que.png" class="mx-auto w-40 lg:w-52 order-1 lg:order-2" />
       </div>
-
 
       <div class="grid gap-10 lg:grid-cols-2 lg:items-center">
-        <img src="./src/skeleton.png" class="mx-auto w-32 sm:w-40 lg:w-52" />
+        <img src="./src/images/ene.png" class="mx-auto w-40 lg:w-52" />
         <div class="text-center lg:text-left">
-          <h3 class="text-yellow-400 text-xl lg:text-2xl font-bold mb-3">Epic Battles</h3>
-          <p class="opacity-80 leading-relaxed max-w-md mx-auto lg:mx-0">
-            Fight high-level skeleton bosses in tactical turn-based combat.  
-            Use card combos and magical abilities to survive.
+          <h3 class="text-yellow-400 text-2xl font-bold mb-3">Epic Battles</h3>
+          <p class="opacity-80 max-w-md mx-auto lg:mx-0">
+            Fight skeleton bosses in tactical turn-based combat using
+            powerful card combos.
           </p>
         </div>
       </div>
 
     </section>
 
-
     <!-- NEWS -->
-    <section class="px-6 py-24 bg-[#0d0d0f]">
+    <section id="news" class="max-w-6xl mx-auto px-4 py-16">
+      <h2 class="text-yellow-400 text-2xl font-bold mb-10 text-center">
+        Dungeon Walk News
+      </h2>
 
-      <!-- Heading -->
-      <div class="max-w-7xl mx-auto mb-16">
-        <h2 class="text-3xl font-bold text-white mb-2">News</h2>
-        <p class="text-yellow-400 tracking-wide text-sm">
-          THE LATEST NEWS FROM DUNGEON WALK
-        </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+        <article class="bg-[#141414] border-2 border-yellow-400 rounded-2xl overflow-hidden">
+          <div class="bg-black flex justify-center p-6">
+            <img src="./src/images/1.png" class="h-32 [image-rendering:pixelated]" />
+          </div>
+          <div class="p-6 text-right space-y-3">
+            <p class="text-yellow-400 text-xs uppercase">March 12, 2025</p>
+            <h3 class="text-yellow-300 font-bold text-lg">The Crypt Awakens</h3>
+            <p class="text-sm text-gray-300">
+              New undead enemy types discovered deep within the dungeon.
+            </p>
+            <a href="#" class="text-yellow-400 text-sm font-semibold hover:underline">
+              Read more →
+            </a>
+          </div>
+        </article>
+
+        <article class="bg-[#141414] border-2 border-yellow-400 rounded-2xl overflow-hidden">
+          <div class="bg-black flex justify-center p-6">
+            <img src="./src/images/2.png" class="h-32 [image-rendering:pixelated]" />
+          </div>
+          <div class="p-6 text-right space-y-3">
+            <p class="text-yellow-400 text-xs uppercase">March 8, 2025</p>
+            <h3 class="text-yellow-300 font-bold text-lg">New Enemy Variants</h3>
+            <p class="text-sm text-gray-300">
+              Scouts report new enemy formations in lower floors.
+            </p>
+            <a href="#" class="text-yellow-400 text-sm font-semibold hover:underline">
+              Read more →
+            </a>
+          </div>
+        </article>
+
+        <article class="bg-[#141414] border-2 border-yellow-400 rounded-2xl overflow-hidden">
+          <div class="bg-black flex justify-center p-6">
+            <img src="./src/images/3.png" class="h-32 [image-rendering:pixelated]" />
+          </div>
+          <div class="p-6 text-right space-y-3">
+            <p class="text-yellow-400 text-xs uppercase">Feb 27, 2025</p>
+            <h3 class="text-yellow-300 font-bold text-lg">Balance Update</h3>
+            <p class="text-sm text-gray-300">
+              Card synergies and bosses have been rebalanced.
+            </p>
+            <a href="#" class="text-yellow-400 text-sm font-semibold hover:underline">
+              Read more →
+            </a>
+          </div>
+        </article>
+
       </div>
-
-      <div class="max-w-7xl mx-auto grid gap-8
-            sm:grid-cols-2
-            lg:grid-cols-3">
-
-      <!-- Card -->
-      <article class="bg-[#151515] border border-yellow-400 rounded-lg p-5 flex flex-col gap-4">
-        <img
-          src="./src/news-crypt.png"
-          class="w-full h-40 object-cover rounded"
-          alt="Dungeon crypt"
-        />
-
-        <p class="text-yellow-400 text-xs">March 12, 2025</p>
-
-        <h3 class="text-yellow-300 font-bold text-lg">
-          The Crypt Awakens: New Enemy Types Discovered
-        </h3>
-
-        <p class="text-sm opacity-80 leading-relaxed">
-          Deep within the lower dungeon floors, adventurers have begun encountering
-          new undead variants with unpredictable attack patterns.
-        </p>
-
-        <a href="#" class="mt-auto text-yellow-400 text-sm hover:underline">
-          READ MORE →
-        </a>
-      </article>
-
-      <!-- Card -->
-      <article class="bg-[#151515] border border-yellow-400 rounded-lg p-5 flex flex-col gap-4">
-        <img
-          src="./src/news-enemies.png"
-          class="w-full h-40 object-cover rounded"
-          alt="Enemy sprites"
-        />
-
-        <p class="text-yellow-400 text-xs">March 8, 2025</p>
-
-        <h3 class="text-yellow-300 font-bold text-lg">
-          New Enemy Variants Spotted in the Lower Floors
-        </h3>
-
-        <p class="text-sm opacity-80 leading-relaxed">
-          Scouts report new enemy formations deeper in the dungeon,
-          forcing players to rethink card synergies.
-        </p>
-
-        <a href="#" class="mt-auto text-yellow-400 text-sm hover:underline">
-          READ MORE →
-        </a>
-      </article>
-
-      <!-- Card -->
-      <article class="bg-[#151515] border border-yellow-400 rounded-lg p-5 flex flex-col gap-4">
-        <img
-          src="./src/news-update.png"
-          class="w-full h-40 object-cover rounded"
-          alt="Game update"
-        />
-
-        <p class="text-yellow-400 text-xs">February 27, 2025</p>
-
-        <h3 class="text-yellow-300 font-bold text-lg">
-          Balance Update: Cards & Bosses Adjusted
-        </h3>
-
-        <p class="text-sm opacity-80 leading-relaxed">
-          Card synergies have been rebalanced and boss encounters tuned
-          to better reward strategic play.
-        </p>
-
-        <a href="#" class="mt-auto text-yellow-400 text-sm hover:underline">
-          READ MORE →
-        </a>
-      </article>
-
-    </div>
-
-
-
+    </section>
 
     <!-- FOOTER -->
-    <footer class="bg-[#0c0c0d] border-t border-yellow-400 mt-32 py-12 px-8">
+    <footer class="bg-[#0c0c0d] border-t border-yellow-400 py-12 px-8">
+      <div class="max-w-6xl mx-auto grid gap-10 text-center lg:grid-cols-3 lg:text-left">
 
-      <div class="max-w-6xl mx-auto grid gap-10 text-center lg:text-left
-                  lg:grid-cols-3 lg:items-start">
-
-        
         <div>
-          <h3 class="text-yellow-400 font-bold text-xl tracking-wide mb-2">
-            Dungeon Walk
-          </h3>
-          <p class="text-xs text-gray-400 leading-relaxed max-w-xs mx-auto lg:mx-0">
-            A tactical roguelike card adventure. Build your deck, fight skeletons,
-            and descend deeper with every run.
+          <h3 class="text-yellow-400 font-bold text-xl mb-2">Dungeon Walk</h3>
+          <p class="text-xs text-gray-400 max-w-xs mx-auto lg:mx-0">
+            A tactical roguelike card adventure built for dungeon crawlers.
           </p>
         </div>
 
-       
-        <div class="space-y-2">
-          <h4 class="text-sm font-semibold text-yellow-400 tracking-wide">Navigation</h4>
+        <div>
+          <h4 class="text-yellow-400 text-sm font-semibold mb-2">Navigation</h4>
           <ul class="space-y-1 text-sm">
-            <li><a href="#" class="hover:text-yellow-400 transition">Home</a></li>
-            <li><a href="#" class="hover:text-yellow-400 transition">Features</a></li>
-            <li><a href="#" class="hover:text-yellow-400 transition">How it Works</a></li>
-            <li><a href="#" class="hover:text-yellow-400 transition">Contact</a></li>
+            <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
+            <li><a href="#features" class="hover:text-yellow-400">Features</a></li>
+            <li><a href="#how-it-works" class="hover:text-yellow-400">How it Works</a></li>
+            <li><a href="#news" class="hover:text-yellow-400">News</a></li>
           </ul>
         </div>
 
-        
-        <div class="space-y-2">
-          <h4 class="text-sm font-semibold text-yellow-400 tracking-wide">Follow Us</h4>
-          <div class="flex justify-center lg:justify-start gap-4 mt-1">
-            <a href="#"><img src="./src/icon-twitter.png" class="w-5 opacity-70 hover:opacity-100 transition"></a>
-            <a href="#"><img src="./src/icon-github.png" class="w-5 opacity-70 hover:opacity-100 transition"></a>
-            <a href="#"><img src="./src/icon-discord.png" class="w-5 opacity-70 hover:opacity-100 transition"></a>
+        <div>
+          <h4 class="text-yellow-400 text-sm font-semibold mb-2">Follow Us</h4>
+          <div class="flex justify-center lg:justify-start gap-4">
+            <img src="./src/icon-twitter.png" class="w-5 opacity-70 hover:opacity-100">
+            <img src="./src/icon-github.png" class="w-5 opacity-70 hover:opacity-100">
+            <img src="./src/icon-discord.png" class="w-5 opacity-70 hover:opacity-100">
           </div>
         </div>
 
       </div>
 
-      <p class="text-[10px] text-gray-500 text-center mt-10 tracking-wide">
+      <p class="text-[10px] text-gray-500 text-center mt-10">
         © 2025 Dungeon Walk — All Rights Reserved
       </p>
-
     </footer>
-
 
   </body>
 </html>
